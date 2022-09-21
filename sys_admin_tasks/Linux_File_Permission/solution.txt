@@ -1,0 +1,21 @@
+1. Login in to the application server
+
+
+        ssh tony@stapp01
+    
+
+2. Checking File Permissions of the executable file
+
+
+        sudo ls -ltr /tmp/xfusioncorp.sh
+
+
+3. Granting all other user permission to execute the script file
+
+        sudo chmod o+rx /tmp/xfusioncorp.sh
+
+
+4. Executing the executable file
+
+
+        sudo sh /tmp/xfusioncorp.sh
