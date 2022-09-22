@@ -1,0 +1,15 @@
+1. SSH into App Server1
+
+        tony@stapp01
+
+2. Login in as root user
+
+        sudo su -
+
+3. Create temporary user in Server1 
+        
+        adduser -e 2021-02-17 john
+
+4. Verify user creation and expiry period
+
+        chage -l john
