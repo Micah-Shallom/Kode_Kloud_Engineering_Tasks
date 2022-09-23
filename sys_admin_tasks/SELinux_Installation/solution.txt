@@ -1,0 +1,21 @@
+1. Checking the particular server linux distribution
+
+        cat /etc/os-release
+
+
+2. Installing SELinux
+
+        yum -y install selinux
+
+
+3. Checking SELinux status
+
+        sestatus
+
+4. Changing the selinux status from enforcing to disabled
+
+        vi /etc/selinux/config
+        i
+        SELINUX=disabled
+        :wq
+        
