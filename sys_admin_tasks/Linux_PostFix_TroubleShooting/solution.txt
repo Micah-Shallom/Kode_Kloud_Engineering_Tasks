@@ -1,0 +1,40 @@
+1. SSH into mailserver
+
+        ssh groot@stmail01
+
+2. Login in as root user
+
+        sudo su -
+
+3. check for the presence of postfix mailserver
+
+        rpm -qa | grep postfix
+
+4. Install postfix if absent
+
+        yum install -y postfix
+
+5. Configure postfix 
+
+        myhostname = smtp.example.local
+
+        mydomain = example.local
+
+        myorigin = $mydomain
+
+        inet_interfaces = all
+
+        inet_protocols = all
+
+        mydestination = $myhostname, localhost.$mydomain, localhost,
+
+        mynetworks = <your ip>, 127.0.0.0/8
+
+6. Restart postfix service
+
+        systemctl restart postfix
+
+
+7. Check postfix status 
+
+        systemctl status postfix
