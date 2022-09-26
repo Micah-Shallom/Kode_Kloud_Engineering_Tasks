@@ -1,0 +1,1 @@
+1. scp  /tmp/nautilus.txt.gpg tony@stapp01:/home/opt
