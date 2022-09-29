@@ -1,0 +1,16 @@
+1. SSH into app server 3
+
+
+        ssh banner@stapp03
+        sudo sudo -
+
+2. Delete lines containing keyword
+
+
+        sed -e '/code/d' /home/BSD.txt > /home/BSD_DELETE.txt
+
+
+3. Replace word with keyword making sure a word is replace and not the string contained in an existing word
+
+
+        sed 's/\<the\>/their/g' /home/BSD.txt > /home/BSD_REPLACE.txt
