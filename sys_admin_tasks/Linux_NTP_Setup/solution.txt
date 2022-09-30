@@ -1,0 +1,19 @@
+1. SSH into App Server 2
+
+        ssh steve@stapp02
+
+
+2. Update Centos and install ntp
+
+        yum install update -y @@ yum install -y ntp
+
+
+3. Configure NTP Servers
+
+        vi /etc/ntp.conf
+        
+        server 2.cn.pool.ntp.org iburst
+        server 2.cn.pool.ntp.org iburst
+        server 2.cn.pool.ntp.org iburst
+        server 2.cn.pool.ntp.org iburst
+    
