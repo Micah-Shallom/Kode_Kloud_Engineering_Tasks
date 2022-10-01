@@ -1,0 +1,12 @@
+1. SSH into APP Server 1
+
+        tony@stapp01
+        sudo su -
+
+2. Edit the resolve.conf file to contain google DNS ip
+
+        vi /etc/resolv.conf
+
+        nameserver 8.8.8.8 or nameserver 8.8.4.4
+
+3. Submit
