@@ -1,0 +1,21 @@
+1. SSH into the server
+
+        ssh tony@stapp01
+        sudo su -
+
+
+2. Create directory
+
+        mkdir -p /devops/data
+
+3. Create group (devops)
+
+        groupadd devops
+
+4. Change directory group ownership to devops
+
+        chgrp -R devops /devops/data
+
+5. Change directory file ownership 
+
+        chown -R 2770 /devops/data
