@@ -15,7 +15,9 @@
         visudo
 
     ```
-    tony ALL=(ALL) NOPASSWD=NO
+    john ALL=(ALL) NOPASSWD=NO
     ```
 
-    
+5. Check to see if it works
+
+    su john
