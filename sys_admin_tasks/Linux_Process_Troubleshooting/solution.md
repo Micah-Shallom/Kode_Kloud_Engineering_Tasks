@@ -1,0 +1,1 @@
+1. SSH into the server
