@@ -1,1 +1,1 @@
-1. scp  /tmp/nautilus.txt.gpg tony@stapp01:/home/opt
+1. scp  /tmp/nautilus.txt.gpg banner@stapp03:/home/appdata
