@@ -27,3 +27,5 @@
 6. Start tomcat server
 
         systemctl start tomcat
+
+7. Reimplement this for the second time
