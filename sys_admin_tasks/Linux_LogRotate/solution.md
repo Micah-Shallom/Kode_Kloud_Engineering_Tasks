@@ -9,7 +9,7 @@
 
 3. Update logrotate configuration
 
-        cd /etc/logrotate.d/squid
+        vi /etc/logrotate.d/squid
 
         change `weekly` to `monthly`
         update rotation from `5` to `3`
