@@ -5,7 +5,11 @@
 
 2. Installing SELinux
 
-        yum -y install selinux
+        yum install selinux-policy-targeted
+
+        yum install selinux-policy-devel policycoreutils
+
+        touch /.autorelabel; reboot
 
 
 3. Checking SELinux status
