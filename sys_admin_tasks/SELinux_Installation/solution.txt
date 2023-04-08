@@ -9,7 +9,7 @@
 
         yum install selinux-policy-devel policycoreutils
 
-        touch /.autorelabel; reboot
+        
 
 
 3. Checking SELinux status
